@@ -94,7 +94,7 @@ class LinkedList:
             temp=temp.next
     return self.head
  
- #Bubble sort on Linked List
+ #Linear Search in linked list to search for a element in linked list
   def searchll(self,value):
     count =0
     temp =self.head
