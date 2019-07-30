@@ -124,10 +124,7 @@ class LinkedList:
           j=j.next
         i=i.next
 
-
-    
-
-if __name__ == "__main__":
+ if __name__ == "__main__":
   llist = LinkedList()
   n = int(input("Enter the no of element of linked list"))
   for i in range(0,n):
