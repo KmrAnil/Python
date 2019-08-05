@@ -25,6 +25,7 @@ class DoubleLinkedList:
       self.head=newNode
     else:
       newNode.next =self.head
+      self.head.pre=newNode
       self.head =newNode
   
   #insert node at any position
@@ -68,6 +69,7 @@ class DoubleLinkedList:
   #print the doubly linked list 
   def printdll(self):
     temp=self.head
+    print("Print Linked list in forward Direction")
     while temp!=None:
       print(temp.data)
       temp=temp.next
@@ -75,6 +77,7 @@ class DoubleLinkedList:
   #print the doubly linked list in  backward Direction
   def printbackward(self):
     temp = self.tail
+    print("Print linked List in backward direction")
     while(temp!=None):
       print(temp.data)
       temp =temp.pre
