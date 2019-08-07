@@ -123,6 +123,21 @@ class LinkedList:
             j.data=temp
           j=j.next
         i=i.next
+   #check linked list is palindrome or not
+  def isPalindrome():
+    temp = self.head
+    t1 =0
+    t2=0
+    n =1
+    while temp != None:
+        t1 = t1 + temp.data*n
+        t2 =t2*10 +temp.data
+        temp=temp.next
+        n=n*10
+    if t1 == t2:
+        return 1
+    else:
+        return 0
     
 
 if __name__ == "__main__":
@@ -141,5 +156,6 @@ if __name__ == "__main__":
   llist.searchll(int(input("Enter the value to be search")))
   llist.sort()
   llist.printll()
+  print(isPalindrome)
 
   
